@@ -11,16 +11,19 @@
 // Use your function to create a header
 // and append it to the DOM inside the div.header-container
 
+const headGroup = document.querySelector('.header-container');
+headGroup.append(Header())
 
-const headGroup = document.querySelector('.header-container')
 function Header() {
     //creating elements/classes
     const header = document.createElement('div');
-    header.classList.add("header");
     const date = document.createElement('span');
-    date.classList.add("date");
     const title = document.createElement('h1');
     const temp = document.createElement('span');
+   
+    //Class Naming
+    header.classList.add("header");
+    date.classList.add("date");
     date.classList.add("temp");
     
     //Hiearchy 
